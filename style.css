@@ -1,3 +1,13 @@
 body {
   background-color: aquamarine;
 }
+
+/* Class + ID */
+
+#p-custom-id {
+  color: red;
+}
+
+.h1-custom {
+  color: blue;
+}
