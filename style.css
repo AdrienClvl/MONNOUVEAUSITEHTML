@@ -1,13 +1,132 @@
 body {
-  background-color: aquamarine;
+  background-color: #242424;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
 }
 
-/* Class + ID */
+header {
+  background-color: cornflowerblue;
+  padding: 1rem;
 
-#p-custom-id {
-  color: red;
+  display: flex;
+  gap: 1rem;
 }
 
-.h1-custom {
-  color: blue;
+header > img {
+  background-color: deeppink;
+  width: 128px;
+  height: 64px;
+}
+
+header > nav {
+  background-color: deeppink;
+  flex-grow: 1;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+}
+
+li > a:hover,
+li > a:focus,
+li > a:active {
+  font-weight: bold;
+}
+
+main {
+  background-color: yellow;
+  padding: 1rem;
+  margin: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-1 {
+  background-color: red;
+  padding: 1rem;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.section-1 > h1 {
+  background-color: lime;
+
+  display: inline-block;
+  width: 100%;
+
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.section-1 > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-1 > div > div {
+  background-color: lime;
+  flex-grow: 1;
+  height: 100px;
+
+  text-align: center;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 480px) {
+  .section-1 > div,
+  .section-2 > div {
+    flex-direction: column;
+  }
+}
+.section-2 {
+  background-color: red;
+  padding: 1rem;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.section-2 > h2 {
+  background-color: lime;
+
+  display: inline-block;
+  width: 100%;
+
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.section-2 > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-2 > div > div {
+  background-color: lime;
+  flex-grow: 1;
+  height: 100px;
+
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  background-color: coral;
+  padding: 1rem;
+  text-align: center;
 }
