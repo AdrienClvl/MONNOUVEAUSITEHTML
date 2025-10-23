@@ -44,6 +44,8 @@ li > a:active {
   font-weight: bold;
 }
 
+/* ======== */
+
 main {
   background-color: yellow;
   padding: 1rem;
@@ -79,13 +81,30 @@ main {
 }
 
 .section-1 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lime;
   flex-grow: 1;
   height: 100px;
+  gap: 1rem;
 
   text-align: center;
   padding: 1rem 0;
 }
+
+.section-1 > div > div > button {
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+
+  border: none;
+  background-color: lightcyan;
+
+  width: fit-content;
+}
+
 @media screen and (max-width: 480px) {
   .section-1 > div,
   .section-2 > div {
