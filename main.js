@@ -28,4 +28,20 @@ ChangeTitleSize = () => {
 button1.addEventListener("click", ChangeColor);
 button2.addEventListener("click", ChangeTitleSize);
 
-BigElement = () => {};
+// Exercice 1 - Filtre de stock
+
+const products1 = [
+  { sku: "A100", name: "Clavier", price: 29.99, stock: 12 },
+  { sku: "B200", name: "Souris", price: 19.99, stock: 0 },
+  { sku: "C300", name: "Écran", price: 159.99, stock: 5 },
+];
+
+function InStock() {
+  const inStockProducts = products1.filter((product) => product.stock > 0);
+  inStockProducts.forEach((product) => {
+    console.log(
+      `Le produit "${product.name}" est en stock avec ${product.stock} unités disponibles.`
+    );
+  });
+}
+InStock(); // Appel de la fonction pour tester
